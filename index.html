@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Banking Project</title>
+
+<style>
+h1{
+    font-size: 120px;
+    color:red;
+    font-family: 'Merriweather', serif;
+}
+</style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a style="float:left;"><img src="bank.png" alt="" width="30" height="24"></a>
+    <a href="#home">Contact Us</a>
+    <a href="#news">Our Journey</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">Menu
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+  
+  <div class="box center ">
+      <h1>Tatva Bank</h1>
+      <button type="button" class="btn btn-light" onclick="relocate_home()">View All Customers</button>
+  </div>
+
+<footer>
+  <div class="py-4 footer" >
+    <div class="container text-center">
+      <p class="text-muted mb-0 py-2 center " style="color:white;">
+        <i>A Spark Foundation Project</i><br>
+        <b>© 2021 Satyaki Mandal <i>all rights reserved</i></b></p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  function relocate_home(){
+    location.href = "connections.php";
+  }
+  </script>
+</body>
+</html>
